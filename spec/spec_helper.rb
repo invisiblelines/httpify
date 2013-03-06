@@ -1,4 +1,8 @@
-$:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "/../lib")))
+# encoding: binary
+require 'bundler'
+Bundler.setup(:default, :test)
 
-require "rspec"
-require "httpify"
+require 'rspec'
+
+$: << File.expand_path('../../lib', __FILE__)
+require 'httpify'
