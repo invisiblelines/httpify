@@ -1,5 +1,5 @@
 require 'active_support/core_ext/hash'
-
+require 'httpify/version'
 require 'httpify/httpifier'
 require 'httpify/core_ext/string/httpify'
 
@@ -17,8 +17,6 @@ require 'httpify/core_ext/string/httpify'
 #
 
 module Httpify
-  
-  VERSION = "0.1.1"
   
   extend ActiveSupport::Concern
   
