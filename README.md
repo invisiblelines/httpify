@@ -1,6 +1,8 @@
 Httpify
 =======
 
+Adds a method on String to add the http(s) prefix 
+
 Usage
 -----
 
