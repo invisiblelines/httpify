@@ -6,8 +6,8 @@ Adds a method on String to add the http(s) prefix
 Usage
 -----
 
-Include in your ActiveRecord model and specify any attributes you wish to
-automatically be prefixed with http://...
+Use directly on any String object or include in your ActiveRecord model and 
+specify any attributes you wish to automatically be prefixed with http://...
 
 Example
 -------
