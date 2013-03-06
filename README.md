@@ -1,6 +1,8 @@
 Httpify
 =======
 
+[![Build Status](https://travis-ci.org/invisiblelines/httpify.png?branch=master)](https://travis-ci.org/invisiblelines/httpify)
+
 Adds a method on String to add the http(s) prefix 
 
 Usage
