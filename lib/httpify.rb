@@ -18,7 +18,7 @@ require 'httpify/core_ext/string/httpify'
 
 module Httpify
   
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
   
   extend ActiveSupport::Concern
   
