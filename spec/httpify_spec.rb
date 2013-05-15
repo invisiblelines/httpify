@@ -2,16 +2,6 @@ require "spec_helper"
 
 module Httpify
 
-  class Link
-  
-    include Httpify
-  
-    attr_accessor :url, :source
-  
-    httpify :url
-  
-  end
-
   describe "a String" do
 
     it "should respond to httpify" do
@@ -54,34 +44,35 @@ module Httpify
 
   describe "A class with Httpify included" do
   
-    before(:each) do
-      @link = Link.new
-    end
+    subject { Link.new }
   
     context "an httpified attribute that is nil" do
     
-      it "should return nil" do
-        @link.url = nil
-        @link.url.should be_nil
-      end
+      # it "should return nil" do
+      #   @link.url = nil
+      #   @link.url.should be_nil
+      # end
+      its(:url) { should be_nil }
     
     end
   
     context "an httpified attribute that is blank" do
     
-      it "should return blank" do
-        @link.url = ""
-        @link.url.should == ""
-      end
+      # it "should return blank" do
+      #   @link.url = ""
+      #   @link.url.should == ""
+      # end
+      its(:url) { should be_blank }
     
     end
 
     context "a httpified attribute that is a String" do
 
-      it "should return the httpified version" do
-        @link.url = "www.google.com"
-        @link.url.should == "http://www.google.com"
-      end
+      # it "should return the httpified version" do
+      #   @link.url = "www.google.com"
+      #   @link.url.should == "http://www.google.com"
+      # end
+      its(:url) { should == "http://www.google.com" }
 
     end
 
