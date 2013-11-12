@@ -1,5 +1,8 @@
 require 'bundler/setup'
 require 'httpify'
+require "codeclimate-test-reporter"
+
+CodeClimate::TestReporter.start
 
 class Link
 
